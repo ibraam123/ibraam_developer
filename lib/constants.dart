@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppColors {
   // Primary Colors
@@ -32,20 +33,91 @@ class AppColors {
   static const Color accentTeal = Color(0xFF009688);
 
   // Task/Section Specific Colors (from the image)
-  static const Color dailyTask = Color(0xFF42A5F5); // Blue for daily tasks
-  static const Color beforeOrdering = Color(0xFF66BB6A); // Green
-  static const Color rtvSection = Color(0xFFFFA726); // Orange
-  static const Color afterOrdering = Color(0xFFEF5350); // Red
-  static const Color inventory = Color(0xFF7E57C2); // Purple
-  static const Color availability = Color(0xFF26C6DA); // Teal
-  static const Color planogram = Color(0xFF5C6BC0); // Indigo
-  static const Color shareOfShelves = Color(0xFF26A69A); // Green-teal
-  static const Color offers = Color(0xFFFF7043); // Deep orange
-  static const Color ordering = Color(0xFFEC407A); // Pink
+  static const Color dailyTask = Color(0xFF42A5F5);
+  static const Color beforeOrdering = Color(0xFF66BB6A);
+  static const Color rtvSection = Color(0xFFFFA726);
+  static const Color afterOrdering = Color(0xFFEF5350);
+  static const Color inventory = Color(0xFF7E57C2);
+  static const Color availability = Color(0xFF26C6DA);
+  static const Color planogram = Color(0xFF5C6BC0);
+  static const Color shareOfShelves = Color(0xFF26A69A);
+  static const Color offers = Color(0xFFFF7043);
+  static const Color ordering = Color(0xFFEC407A);
 
   // Status Colors
   static const Color success = Color(0xFF4CAF50);
   static const Color warning = Color(0xFFFFC107);
   static const Color error = Color(0xFFF44336);
   static const Color info = Color(0xFF2196F3);
+}
+class AppTextStyles {
+
+  static TextStyle navigationItem = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
+  );
+  static TextStyle dashboardText = TextStyle(
+    fontSize: 25.sp,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textDark,
+  );
+
+  static TextStyle selectOptionText = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textDark,
+  );
+
+
+  static TextStyle sectionHeader = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textDark,
+  );
+
+  static TextStyle sectionHeaderSmall = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textMedium,
+  );
+
+
+  static TextStyle dailyTask = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primary,
+
+  );
+
+  static TextStyle buttonTextOutline = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
+
+  static TextStyle inputText = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textDark,
+  );
+
+  static TextStyle successText = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.success,
+  );
+
+  static TextStyle warningText = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.warning,
+  );
+
+  static TextStyle errorText = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.error,
+  );
+
 }

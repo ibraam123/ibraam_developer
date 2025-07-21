@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ibraam_developer/constants.dart';
-
 
 class CustomContainer extends StatelessWidget {
   final String title;
@@ -16,17 +16,16 @@ class CustomContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return GestureDetector(
-      onTap: onTap ,
+      onTap: onTap,
       child: Container(
-        padding: EdgeInsets.only(bottom: 12),
-        width: 180,
-        height: 140,
+        padding: EdgeInsets.only(bottom: 12.r),
+        width: 164.w,
+        height: 130.h,
         decoration: BoxDecoration(
           color: AppColors.containerColor,
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
+          borderRadius: BorderRadius.circular(12.r),
+          boxShadow:  [
             BoxShadow(
               color: Colors.grey.withValues(alpha: 1.2),
               blurRadius: 4,
@@ -37,22 +36,13 @@ class CustomContainer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              icon,
-              size: size.height * 0.1,
-              color: AppColors.primary,
-            ),
+            Icon(icon, size: 90.sp, color: AppColors.primary),
             const SizedBox(height: 4),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(
                 title,
-                style:  TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.primary,
-                  overflow: TextOverflow.ellipsis,
-                ),
+                style: AppTextStyles.dailyTask,
                 textAlign: TextAlign.center,
               ),
             ),
